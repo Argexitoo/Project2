@@ -1,11 +1,11 @@
 
 # Project's name
 ​
-Plantiful
+Doggy
 ​
 ## Description
 ​
-Plantiful is a catalog of plants that allows users to track the evolution of their plants
+It is an application to be able to meet people who have dogs and to be able to make group outings
 ​
 ## USER STORIES
 ​
@@ -23,31 +23,27 @@ Plantiful is a catalog of plants that allows users to track the evolution of the
 ​
 **Profile** - As a user I want to be able to see my profile and edit it
 ​
-**Garden** - As a user I want to be able to see my list of plants
+**Add new meeting** - As a user I want to be able to create new meetings with other people
 ​
-**Add plant** - As a user I want to be able to add my plants to my garden based on a plant type catalog
+**List of meetings** - As a user I want to be able to see my meetings
 ​
-**See plant** - As a user I want to be able to see my garden of plants
+**Delete meeting** - As a user I want to be able to delete my meetings
 ​
-**Delete plant** - As a user I want to be able to delete plants from my garden
+**Update meeting** - As a user I want to be able to update the information of my meetings
 ​
-**Update plant** - As a user I want to be able to update the information of my plants
+**Add new dog** - As a user I want to be able to add a new dog.
+​
+**List of my dogs** - As a user I want to be able to see my dogs.
+​
+**Delete dog** - As a user I want to be able to delete my dogs.
+​
+**Update dog** - As a user I want to be able to update the information of my dog.
 ​
 ## BACKLOG
 ​
-**Catalog filter** - As a user I want to be able to filter the plant catalog by popularity, care difficulty, place
-​
-**See plant progress** - As a user I want to be able to see the evolution of my plant
-​
-**Add plant shopping point** - As a user I want to be able to define where I bought the plant
-​
-**See other users buying points** - As a user I want to be able to see a map with the places where other users bought their plants
+**Catalog filter** - As a user I want to be able to carry out a meeting search in my area
 ​
 **Speak with a plant expert** - As a user I want to be able to speak with a plant expert in a chat
-​
-**Native app feel** - As a user I want to have a nice smartphone feeling eventhough it is not a native app
-​
-**See related plants** - As a user I want to be able to see plants that are related to mine
 ​
 ## Routes
 ​
@@ -71,33 +67,6 @@ Plantiful is a catalog of plants that allows users to track the evolution of the
 ​
 ## Models
 ​
-Plant model
-​
-```js
-{
-    commonName: String,
-    family: String,
-    careDifficulty: Number,
-    watering: String,
-    lifeLength: String,
-    img: String,
-    careTips: Array,
-    place: Array
-}
-```
-​
-MyPlant submodel
-​
-```js
-{
-    nickname: String,
-    rating: Number,
-    typePlant: {type: Schema.Types.ObjectId, ref: 'Plant'},
-    userPics: Array,
-    shoppingPoint: Array
-}
-```
-​
 User model
 ​
 ```js
@@ -106,7 +75,19 @@ User model
     hashedPassword: String,
     location: Array,
     age: Number,
-    userPlants: [{ type: Schema.Types.ObjectId, ref: 'MyPlant' }]
+    img: String,
+}
+```
+Dog model
+​
+```js
+{
+    name: String,
+    sex: String
+    race: String,
+    size: Array,
+    age: Number
+    img: String,
 }
 ```
 ​
