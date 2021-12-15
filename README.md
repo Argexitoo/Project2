@@ -1,11 +1,11 @@
 
 # Project's name
 ​
-Doggy
+Project 2
 ​
 ## Description
 ​
-It is an application to be able to meet people who have dogs and to be able to make group outings
+It is an application that allows you to meet people who have dogs in your area and connect with them to make group outings
 ​
 ## USER STORIES
 ​
@@ -33,39 +33,39 @@ It is an application to be able to meet people who have dogs and to be able to m
 **Add new meeting** - As a user I want to be able to create new meetings with other people
 ​
 
-**List of meetings** - As a user I want to be able to see my meetings
+**List of meetings** - As a user I want to be able to see my set up meetings
 ​
 
-**Delete meeting** - As a user I want to be able to delete my meetings
+**Delete meeting** - As a user I want to be able to delete the meetings I created
 ​
 
 **Update meeting** - As a user I want to be able to update the information of my meetings
 ​
 
-**Add new dog** - As a user I want to be able to add a new dog.
+**Add new dog** - As a user I want to be able to add a new dog
 ​
 
-**List of my dogs** - As a user I want to be able to see my dogs.
+**List of my dogs** - As a user I want to be able to see my dogs
 ​
 
-**Delete dog** - As a user I want to be able to delete my dogs.
+**Delete dog** - As a user I want to be able to delete my dogs
 ​
 
-**Update dog** - As a user I want to be able to update the information of my dog.
+**Update dog** - As a user I want to be able to update the information of my dog
 ​
 
 ## BACKLOG
 ​
-**Catalog filter** - As a user I want to be able to carry out a meeting search in my area
+**Catalog filter** - As a user I want to be able to carry out a search for meetings in my area
 ​
 
-**To be able to join meetups** - As a user I want to be able to join meetups
+**To be able to join meetings** - As a user I want to be able to join preexisting meetings
 ​
 
 **Record of meetups created** - As a user I want to see the meetings that I have created
 ​
 
-**Meetings in which I have participated** - As a user I want to see the meetings that I have been
+**Meetings in which I have participated** - As a user I want to see the meetings I have been on previously
 ​
 
 ## Routes
@@ -80,11 +80,10 @@ It is an application to be able to meet people who have dogs and to be able to m
 | Log out         | GET   | /logout                       | Log out a user                                   |                                       | /               |
 | Profile         | GET    | /profile                      | See the profile page with editable form          |                                       |                 |
 | Profile edited  | POST   | /profile                      | Send user's data changed                         | {user_email, password                 | /profile}       |
-| Garden          | GET    | /garden                       | See user's garden collection                     |                                       |                 |
-| Plant           | GET    | /garden/plantid               | Read plant's information                         |                                       |                 |
-| Pland add form  | GET    | /garden/new                   | See form to upload a new plant                   |                                       |                 |
-| Plant add       | POST   | /garden/new                   | Upload a plant to user's garden                  | {nickname, user_pics, shopping_point} | /garden/plantid |
-| Plant edit form | GET    | /garden/plantid/edit          | See edit form with plant's preloaded information |                                       |                 |
+| Dog             | GET    | /profile/dogId                | Read dog's information                           |                                       |                   |
+| Dog add form  | GET    | /profile/newDog                   | See form to upload a new dog                   |                                       |                 |
+| Dog add       | POST   | /profile/newDog                   | Upload a dog to user's                         | {name, sex, race, size, age, img } | /profile/dogId |
+| Dog edit form | GET    | /profile/plantid/edit          | See edit form with plant's preloaded information |                                       |                 |
 | Plant edit      | POST   | /userid/garden/plantid/edit   | Add plant's new information                      | {nickname, user_pics, shopping_point} | /garden/plantid |
 | Plant delete    | POST   | /userid/garden/plantid/delete | Delete plant from user's garden                  |                                       | /garden         |
 ​
@@ -107,7 +106,7 @@ Dog model
 {
     name: String,
     sex: String,
-    race: String,
+    race: Array,
     size: Array,
     age: Number,
     img: String,
