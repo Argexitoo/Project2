@@ -82,10 +82,10 @@ It is an application that allows you to meet people who have dogs in your area a
 | Profile edited  | POST   | /profile                      | Send user's data changed                         | {user_email, password                 | /profile}       |
 | Dog             | GET    | /profile/dogId                | Read dog's information                           |                                       |                   |
 | Dog add form  | GET    | /profile/newDog                   | See form to upload a new dog                   |                                       |                 |
-| Dog add       | POST   | /profile/newDog                   | Upload a dog to user's                         | {name, sex, race, size, age, img } | /profile/dogId |
-| Dog edit form | GET    | /profile/plantid/edit          | See edit form with plant's preloaded information |                                       |                 |
-| Plant edit      | POST   | /userid/garden/plantid/edit   | Add plant's new information                      | {nickname, user_pics, shopping_point} | /garden/plantid |
-| Plant delete    | POST   | /userid/garden/plantid/delete | Delete plant from user's garden                  |                                       | /garden         |
+| Dog add       | POST   | /profile/newDog                   | Upload a dog to user                         | {name, sex, race, size, age, img} | /profile/dogId |
+| Dog edit form | GET    | /profile/dogId/edit                | See edit form with dog's preloaded information |                                       |                 |
+| Dog edit      | POST   | profile/dogId/edit   | Add dog's new information                      | {name, sex, race, size, age, img} | /profile/dogId |
+| Dog delete    | POST   | profile/dogId/delete | Delete dog from user                  |                                       | /profile        |
 ​
 ## Models
 ​
