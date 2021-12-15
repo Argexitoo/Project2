@@ -9,47 +9,65 @@ It is an application to be able to meet people who have dogs and to be able to m
 ​
 ## USER STORIES
 ​
-**404** 
-- As a user I want to see a nice 404 page when I go to a page that doesn’t exist so that I know it was my fault
+**404** - As a user I want to see a nice 404 page when I go to a page that doesn’t exist so that I know it was my fault
 ​
+
 **500** - As a user I want to see a nice error page when the super team screws it up so that I know that is not my fault
 ​
+
 **Homepage** - As a user I want to be able to access the homepage so that I see what the app is about and login and signup
 ​
+
 **Sign up** - As a user I want to sign up on the webpage so that I can see all the events that I could attend
 ​
+
 **Login** - As a user I want to be able to log in on the webpage so that I can get back to my account
 ​
+
 **Logout** - As a user I want to be able to log out from the webpage so that I can make sure no one will access my account
 ​
+
 **Profile** - As a user I want to be able to see my profile and edit it
 ​
+
 **Add new meeting** - As a user I want to be able to create new meetings with other people
 ​
+
 **List of meetings** - As a user I want to be able to see my meetings
 ​
+
 **Delete meeting** - As a user I want to be able to delete my meetings
 ​
+
 **Update meeting** - As a user I want to be able to update the information of my meetings
 ​
+
 **Add new dog** - As a user I want to be able to add a new dog.
 ​
+
 **List of my dogs** - As a user I want to be able to see my dogs.
 ​
+
 **Delete dog** - As a user I want to be able to delete my dogs.
 ​
+
 **Update dog** - As a user I want to be able to update the information of my dog.
 ​
+
 ## BACKLOG
 ​
 **Catalog filter** - As a user I want to be able to carry out a meeting search in my area
 ​
+
 **To be able to join meetups** - As a user I want to be able to join meetups
 ​
+
 **Record of meetups created** - As a user I want to see the meetings that I have created
 ​
+
 **Meetings in which I have participated** - As a user I want to see the meetings that I have been
 ​
+
 ## Routes
 ​
 | Name            | Method | Endpoint                      | Description                                      | Body                                  | Redirects       |
@@ -88,7 +106,7 @@ Dog model
 ```js
 {
     name: String,
-    sex: String
+    sex: String,
     race: String,
     size: Array,
     age: Number,
@@ -120,7 +138,7 @@ Meeting model
 ​
 URls for the project repo and deploy
 [Link Repo](https://github.com/)
-[Link Deploy](https://plantifulapp.herokuapp.com/)
+[Link Deploy]()
 ​
 ### Wireframes
 ​
@@ -129,4 +147,4 @@ URls for the project repo and deploy
 ### Slides
 ​
 URls for the project presentation (slides)
-[Link Slides.com](https://slides.com/tashbcn/plantiful#/)
+[Link Slides.com]()
