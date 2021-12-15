@@ -9,7 +9,8 @@ It is an application to be able to meet people who have dogs and to be able to m
 ​
 ## USER STORIES
 ​
-**404** - As a user I want to see a nice 404 page when I go to a page that doesn’t exist so that I know it was my fault
+**404** 
+- As a user I want to see a nice 404 page when I go to a page that doesn’t exist so that I know it was my fault
 ​
 **500** - As a user I want to see a nice error page when the super team screws it up so that I know that is not my fault
 ​
@@ -43,7 +44,11 @@ It is an application to be able to meet people who have dogs and to be able to m
 ​
 **Catalog filter** - As a user I want to be able to carry out a meeting search in my area
 ​
-**Speak with a plant expert** - As a user I want to be able to speak with a plant expert in a chat
+**To be able to join meetups** - As a user I want to be able to join meetups
+​
+**Record of meetups created** - As a user I want to see the meetings that I have created
+​
+**Meetings in which I have participated** - As a user I want to see the meetings that I have been
 ​
 ## Routes
 ​
@@ -86,11 +91,23 @@ Dog model
     sex: String
     race: String,
     size: Array,
-    age: Number
+    age: Number,
     img: String,
 }
 ```
 ​
+Meeting model
+​
+```js
+{
+    nameOfUser: String,
+    day: Number,
+    timeStart: Number,
+    timeEnd: Number,
+    place: Array,
+    imgMaps: String,
+}
+```
 ​
 ​
 ## Links
