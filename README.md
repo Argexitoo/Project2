@@ -86,6 +86,12 @@ It is an application that allows you to meet people who have dogs in your area a
 | Dog edit form | GET    | /profile/dogId/edit                | See edit form with dog's preloaded information |                                       |                 |
 | Dog edit      | POST   | profile/dogId/edit   | Add dog's new information                      | {name, sex, race, size, age, img} | /profile/dogId |
 | Dog delete    | POST   | profile/dogId/delete | Delete dog from user                  |                                       | /profile        |
+| Meeting             | GET    | /profile/meetingId                | Read meeting information                           |                                       |                   |
+| Meeting add form  | GET    | /profile/newMeeting                   | See form to upload a new dog                   |                                       |                 |
+| Meeting add       | POST   | /profile/newMeeting                   | Upload a new meeting                         | {nameOfUser, day, timeStartEnd, place, imgMaps} | /profile/meetingId |
+| Meeting edit form | GET    | /profile/meetingId/edit                | See edit form with meeting preloaded information |                                       |                 |
+| Meeting edit      | POST   | profile/meetingId/edit   | Add new meeting information                      | {nameOfUser, day, timeStartEnd, place, imgMaps} | /profile/meetingId |
+| Meeting delete    | POST   | profile/meetingId/delete | Delete meeting from user                  |                                       | /profile        |
 ​
 ## Models
 ​
@@ -119,8 +125,7 @@ Meeting model
 {
     nameOfUser: String,
     day: Number,
-    timeStart: Number,
-    timeEnd: Number,
+    timeStartEnd: String,
     place: Array,
     imgMaps: String,
 }
