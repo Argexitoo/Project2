@@ -124,6 +124,7 @@ Meeting model
 ```js
 {
     nameOfUser: String,
+    description: String,
     day: Number,
     timeStartEnd: String,
     place: Array,
