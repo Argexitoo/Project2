@@ -29,19 +29,6 @@ It is an application that allows you to meet people who have dogs in your area a
 
 **Profile** - As a user I want to be able to see my profile and edit it
 ​
-
-**Add new meeting** - As a user I want to be able to create new meetings with other people
-​
-
-**List of meetings** - As a user I want to be able to see my set up meetings
-​
-
-**Delete meeting** - As a user I want to be able to delete the meetings I created
-​
-
-**Update meeting** - As a user I want to be able to update the information of my meetings
-​
-
 **Add new dog** - As a user I want to be able to add a new dog
 ​
 
@@ -66,6 +53,18 @@ It is an application that allows you to meet people who have dogs in your area a
 ​
 
 **Meetings in which I have participated** - As a user I want to see the meetings I have been on previously
+​
+
+**Add new meeting** - As a user I want to be able to create new meetings with other people
+​
+
+**List of meetings** - As a user I want to be able to see my set up meetings
+​
+
+**Delete meeting** - As a user I want to be able to delete the meetings I created
+​
+
+**Update meeting** - As a user I want to be able to update the information of my meetings
 ​
 
 ## Routes
